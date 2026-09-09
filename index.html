@@ -1,84 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Mi Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-        }
+    <title>Mi Portafolio</title>
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .articulo {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Mi blog de programación</h1>
-        <p>Proyectos, experimentos y cosas que voy aprendiendo.</p>
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                Mi Portafolio
+            </a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+            </nav>
+
+        </div>
     </header>
 
-    <div class="articulo">
 
-        <h2>Mi primer artículo</h2>
+    <!-- Presentación -->
+    <main>
 
-        <p>
-            Este es mi primer artículo publicado utilizando
-            GitHub Pages.
-        </p>
+        <section class="hero">
 
-        <p>
-            Aquí voy a documentar mis proyectos y lo que
-            voy aprendiendo mientras programo.
-        </p>
+            <div class="container">
 
-        <h3>¿Qué estoy aprendiendo?</h3>
+                <p class="hero-tag">
+                    PORTAFOLIO DE DESARROLLO
+                </p>
 
-        <ul>
-            <li>Programación</li>
-            <li>Algoritmos</li>
-            <li>Ciberseguridad</li>
-            <li>Desarrollo web</li>
-        </ul>
+                <h1>
+                    Hola, soy Breyner 👋
+                </h1>
 
-<hr>
+                <p class="hero-description">
+                    Este es mi espacio para mostrar los proyectos que estoy
+                    desarrollando mientras aprendo programación, desarrollo
+                    de software y diferentes tecnologías.
+                </p>
 
-<h2>Artículos</h2>
+                <div class="hero-buttons">
 
-<ul>
-    <li>
-        <a href="articulo2.html">
-            Mi segundo artículo
-        </a>
-    </li>
-</ul>
-    </div>
+                    <a href="proyectos.html" class="button primary">
+                        Ver proyectos
+                    </a>
+
+                    <a href="sobre-mi.html" class="button secondary">
+                        Sobre mí
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Proyectos destacados -->
+        <section class="projects">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-tag">
+                        MIS PROYECTOS
+                    </p>
+
+                    <h2>
+                        Proyectos destacados
+                    </h2>
+
+                    <p>
+                        Algunos de los proyectos que he desarrollado
+                        mientras aprendo y pongo en práctica diferentes
+                        conceptos de programación.
+                    </p>
+
+                </div>
+
+
+                <div class="project-grid">
+
+
+                    <!-- Proyecto 1 -->
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <span>🔐</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                CIBERSEGURIDAD
+                            </span>
+
+                            <h3>
+                                Keylogger básico
+                            </h3>
+
+                            <p>
+                                Proyecto experimental para comprender cómo
+                                funciona la captura de entradas de teclado
+                                y explorar conceptos básicos relacionados
+                                con la seguridad informática.
+                            </p>
+
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>Seguridad</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="articulos/keylogger.html">
+                                    Leer artículo →
+                                </a>
+
+                                <a href="TU_LINK_DE_GITHUB"
+                                   target="_blank">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <span>📋</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                INGENIERÍA DE SOFTWARE
+                            </span>
+
+                            <h3>
+                                Analizador de requisitos
+                            </h3>
+
+                            <p>
+                                Herramienta orientada al análisis de
+                                requisitos de software para identificar
+                                información y ayudar a estructurar el
+                                proceso de desarrollo.
+                            </p>
+
+                            <div class="tags">
+                                <span>Software</span>
+                                <span>Requisitos</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="articulos/analizador-requisitos.html">
+                                    Leer artículo →
+                                </a>
+
+                                <a href="TU_LINK_DE_GITHUB"
+                                   target="_blank">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <span>🔑</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                SEGURIDAD
+                            </span>
+
+                            <h3>
+                                Gestor de contraseñas
+                            </h3>
+
+                            <p>
+                                Aplicación para gestionar contraseñas,
+                                generar contraseñas seguras y explorar
+                                conceptos de almacenamiento y protección
+                                de información sensible.
+                            </p>
+
+                            <div class="tags">
+                                <span>TypeScript</span>
+                                <span>Seguridad</span>
+                                <span>Criptografía</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="articulos/gestor-contrasenas.html">
+                                    Leer artículo →
+                                </a>
+
+                                <a href="TU_LINK_DE_GITHUB"
+                                   target="_blank">
+                                    GitHub ↗
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="all-projects">
+
+                    <a href="proyectos.html" class="button secondary">
+                        Ver todos los proyectos →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sección final -->
+        <section class="about-preview">
+
+            <div class="container">
+
+                <div class="about-box">
+
+                    <div>
+
+                        <p class="section-tag">
+                            SOBRE ESTE BLOG
+                        </p>
+
+                        <h2>
+                            No solo quiero mostrar el resultado.
+                        </h2>
+
+                        <p>
+                            También quiero documentar el proceso: qué
+                            problemas encontré, qué aprendí, qué decisiones
+                            tomé y cómo fui construyendo cada proyecto.
+                        </p>
+
+                    </div>
+
+                    <a href="sobre-mi.html" class="button primary">
+                        Conocer más →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Mi Portafolio
+            </p>
+
+            <a href="https://github.com/TU_USUARIO"
+               target="_blank">
+                GitHub ↗
+            </a>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
